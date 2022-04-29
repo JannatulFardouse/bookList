@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book List</title>
+
+    <h1>Book List</h1>
+</head>
+
+<body>
+    <div>
+        <form>
+            <div>
+                <label for="title">Title</label> <br>
+                <input type="text" id="title" />
+            </div>
+
+            <div>
+                <label for="author">Author</label> <br>
+                <input type="text" id="author" />
+            </div>
+
+            <div>
+                <label for="year">Year</label> <br>
+                <input type="text" id="year" />
+            </div>
+
+            <div>
+                <input type="submit" value="Add Book" style="background-color:  orange;" class="btn" />
+            </div>
+        </form>
+        <div style=" display: grid; grid-template-rows: repeat(3, 1fr);">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
